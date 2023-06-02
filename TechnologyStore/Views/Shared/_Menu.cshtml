@@ -1,0 +1,131 @@
+﻿<div id="top-nav" class="h-100" style="background-color: #007bff;">
+    <div class="container" style="margin:auto auto;">
+        <div class="row align-items-center">
+            <div class="col-auto top-nav-text">
+                <a><i class="fa-solid fa-map me-1"></i>Quận Bình Tân, TP.Hồ Chí Minh</a>
+            </div>
+            <div class="col mx-2 top-nav-text">
+                <a><i class="fa-regular fa-clock me-1"></i>7:00 - 19:00</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sticky-top">
+    <div class="container-fluid sticky-top" style="background-color: #fff;">
+        <div class="container">
+            <div class="row g-1">
+                <div class="col-auto" style="margin:auto auto;">
+                    <img src="~/Images/logo.png" width="80" />
+                </div>
+                <div class="col w-100" style="margin:auto auto;">
+                    <div class="d-flex justify-content-center">
+                        <div class="input-group w-100">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-label="Example input" aria-describedby="button-addon1">
+                            <button class="btn btn-primary my-button-primary" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto m-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-primary my-button-primary dropdown-toggle" type="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-circle-user me-1"></i></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                        </ul>
+                    </div>                  
+                </div>
+                <div class="col-auto m-auto">
+                    <a href="#" class="btn btn-primary my-button-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #007bff; padding:12px 0px 15px 0px !important">
+        <div class="container">
+            <div id="nav-middle" class="row g-1">
+                <div class="col">
+                    <button onmouseenter="showMenu()" class="menuButton btn btn-light w-100 flex-grow-1">
+                        <i class="fa-solid fa-bars"></i> Danh
+                        mục sản phẩm
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-light w-100 flex-grow-1">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        Hướng dẫn trả góp
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-light w-100 flex-grow-1">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        Hướng dẫn thanh toán
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-light w-100 flex-grow-1">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Chính
+                        sách bảo hành
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-light w-100 flex-grow-1">
+                        <i class="fa-sharp fa-solid fa-truck-fast"></i>
+                        Chính sách vận chuyển
+                    </button>
+                </div>
+            </div>
+            <div class="row g-1" style="position:relative">
+                <div id="menu" onmouseleave="hideMenu()">
+                    <div class="row">
+                        <div class="col-3" id="menu_left">
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-laptop"></i> Latop Gaming</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-desktop"></i> PC Gaming</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-microchip"></i> Linh Kiện PC</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-tv"></i> Màn Hình</a>
+                            <a class="dropdown-item" href="#"><i class="fa-regular fa-keyboard"></i> Bàn Phím</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-computer-mouse"></i> Chuột + Lót Chuột</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i> Tai nghe - Loa</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-hashtag"></i> Phụ Kiện</a>
+                        </div>
+                        <div class="col-9 border-start" id="menu_right">
+                            <div class="row">
+                                <div class="col-3">
+                                    <b class="text-primary">Thương hiệu</b>
+                                    <a class="dropdown-item px-0" href="#">ASUS</a>
+                                    <a class="dropdown-item px-0" href="#">ACER</a>
+                                    <a class="dropdown-item px-0" href="#">MSI</a>
+                                    <a class="dropdown-item px-0" href="#">LENOVO</a>
+                                    <a class="dropdown-item px-0" href="#">HP</a>
+                                    <a class="dropdown-item px-0" href="#">DELL</a>
+                                </div>
+                                <div class="col-3">
+                                    <b class="text-primary">Giá bán</b>
+                                    <a class="dropdown-item px-0" href="#">Dưới 15 triệu</a>
+                                    <a class="dropdown-item px-0" href="#">Từ 15 triệu đến 20 triệu</a>
+                                    <a class="dropdown-item px-0" href="#">Trên 20 triệu</a>
+                                </div>
+                                <div class="col-3">
+                                    <b class="text-primary">Nhu cầu sử dụng</b>
+                                    <a class="dropdown-item px-0" href="#">Làm đồ họa</a>
+                                    <a class="dropdown-item px-0" href="#">Gaming</a>
+                                    <a class="dropdown-item px-0" href="#">Học sinh - Sinh viên</a>
+                                    <a class="dropdown-item px-0" href="#">Mỏng nhẹ</a>
+                                </div>
+                                <div class="col-3">
+                                    <b class="text-primary">CPU Intel - AMD</b>
+                                    <a class="dropdown-item px-0" href="#">Intel Core I3</a>
+                                    <a class="dropdown-item px-0" href="#">Intel Core I5</a>
+                                    <a class="dropdown-item px-0" href="#">Intel Core I7</a>
+                                    <a class="dropdown-item px-0" href="#">Intel Gen 12</a>
+                                    <a class="dropdown-item px-0" href="#">AMD Ryzen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+﻿#weatherWidget .currentDesc {
+    color: #ffffff !important;
+}
+
+.traffic-chart {
+    min-height: 335px;
+}
+
+#flotPie1 {
+    height: 150px;
+}
+
+    #flotPie1 td {
+        padding: 3px;
+    }
+
+    #flotPie1 table {
+        top: 20px !important;
+        right: -10px !important;
+    }
+
+.chart-container {
+    display: table;
+    min-width: 270px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#flotLine5 {
+    height: 105px;
+}
+
+#flotBarChart {
+    height: 150px;
+}
+
+#cellPaiChart {
+    height: 160px;
+}
+.images-products{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+}
+.table tr td{
+    margin: auto 0;
+    vertical-align: middle;
+}
+a.page-link.active {
+    background-color: #007bff;
+    color:#fff;
+}

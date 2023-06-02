@@ -1,0 +1,914 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+}
+<div class="container">
+    <div id="myCarousel" class="carousel slide .carousel-fade " data-bs-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active"  data-bs-interval="3000">
+                <img src="~/Images/image1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item"  data-bs-interval="3000">
+                <img src="~/Images/image2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item"  data-bs-interval="3000">
+                <img src="~/Images/image3.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</div>
+<div class="container">
+    <div class="my-title">
+        <div class="row">
+            <div class="col d-flex">
+                <p>Danh sách sản phẩm</p>
+            </div>
+            <div class="col">
+                <a class="btn my-button-primary">Xem tất cả sản phẩm</a>
+            </div>
+        </div>
+    </div>
+    @*Trang đầu tiên*@
+<div class="row">
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products1.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 1</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">25,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">50%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products2.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 2</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">30,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">40%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products1.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 1</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">25,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">50%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products2.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 2</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">30,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">40%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products2.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 2</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">30,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">40%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products1.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 1</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">25,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">50%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products2.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 2</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">30,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">40%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="product-frame">
+            <div class="image-frame">
+                <img class="product-image" src="~/Images/products1.jpg" />
+                <div class="product-overlay">
+                    <button class="btn btn-order">Đặt hàng</button>
+                    <button class="btn btn-details">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="product-content">
+                <p class="product-name">Sản phẩm 1</p>
+                <div class="price-wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="original-price">25,000,000 VNĐ</span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="discount-price">20,000,000 VNĐ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="phantramdiscout">50%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    @*Pagination*@
+    <div class="my-pagination d-flex justify-content-center">
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="my-title">
+        <div class="row">
+            <div class="col d-flex">
+                <p>Sản phẩm khuyến mãi</p>
+            </div>
+            <div class="col">
+                <a class="btn my-button-primary">Xem tất cả sản phẩm</a>
+            </div>
+        </div>
+    </div>
+    @*Trang đầu tiên*@
+    <div class="row">
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*Pagination*@
+    <div class="my-pagination d-flex justify-content-center">
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="my-title">
+        <div class="row">
+            <div class="col d-flex">
+                <p>Laptop bán chạy</p>
+            </div>
+            <div class="col">
+                <a class="btn my-button-primary">Xem tất cả sản phẩm</a>
+            </div>
+        </div>
+    </div>
+    @*Trang đầu tiên*@
+    <div class="row">
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products2.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 2</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">30,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-frame">
+                <div class="image-frame">
+                    <img class="product-image" src="~/Images/products1.jpg" />
+                    <div class="product-overlay">
+                        <button class="btn btn-order">Đặt hàng</button>
+                        <button class="btn btn-details">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <p class="product-name">Sản phẩm 1</p>
+                    <div class="price-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="original-price">25,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="discount-price">20,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="phantramdiscout">50%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*Pagination*@
+    <div class="my-pagination d-flex justify-content-center">
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="my-title">
+        <div class="row">
+            <div class="col d-flex">
+                <p>Đăng ký để nhận nhiều ưu đãi hơn</p>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <div class="input-group w-100 rounded-0">
+                        <input type="text"
+                               class="form-control rounded-0"
+                               placeholder="Nhập email"
+                               aria-label="Example input"
+                               aria-describedby="button-addon1" />
+                        <button class="btn btn-primary my-button-primary rounded-0" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+                            Đăng ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

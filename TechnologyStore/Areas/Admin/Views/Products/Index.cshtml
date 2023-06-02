@@ -1,0 +1,78 @@
+﻿@model IEnumerable<TechnologyStore.Models.ViewModel.ProductsViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="card">
+        <div class="card-header">
+            <strong class="card-title">Custom Table</strong>
+        </div>
+        <div class="table-stats order-table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="serial">#</th>
+                        <th class="text-center">ID</th>
+                        <th>Tên sản phẩm</th>
+                        <th class="text-center">Thương hiệu</th>
+                        <th>Danh mục sản phẩm</th>
+                        <th class="text-center">Giá sản phẩm</th>
+                        <th class="text-center">Số lượng</th>
+                        <th class="avatar text-center">Hình ảnh sản phẩm</th>
+                        <th class="text-center">Tùy chỉnh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Model)
+                    {
+                        <tr class="justify-content-center">
+                            <td class="serial">1.</td>
+                            <td class="text-center"> #@product.ID </td>
+                            <td><span class="name">@product.Name</span> </td>
+                            <td class="text-center">@product.BrandName</td>
+                            <td><span class="product">Máy chơi game, PS</span> </td>
+                            <td class="text-center">@product.Price VNĐ</td>
+                            <td class="text-center"><span class="count">@product.Quantity</span></td>
+                            <td class="avatar text-center"><a href="#"><img class="images-products" src="~/Images/products1.jpg" alt=""></a></td>
+                            <td class="text-center">
+                                <a class="btn btn-info btn-sm" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a class="btn btn-danger btn-sm" href="#"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div> <!-- /.table-stats -->
+        @ViewBag.CurrentPage
+        @ViewBag.TotalPage
+        <div style="margin: 0 auto">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    @if (ViewBag.CurrentPage > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index",new {page = ViewBag.CurrentPage -1})" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    }
+                    @for (int i = 1; i <= ViewBag.TotalPage; i++)
+                    {
+                        <li class="page-item"><a class="page-link @((i==ViewBag.CurrentPage) ? "active" : "")" href="@Url.Action("Index",new {page = i})">@i</a></li>
+                    }
+                    @if (ViewBag.CurrentPage < ViewBag.TotalPage)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index",new {page = (int)ViewBag.CurrentPage +1})" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
