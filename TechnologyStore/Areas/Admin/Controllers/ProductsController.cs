@@ -22,5 +22,15 @@ namespace TechnologyStore.Areas.Admin.Controllers
             ViewBag.TotalPage = maxPage;
             return View(model);
         }
+        [HttpGet]
+        public ActionResult Create() 
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(NewProductsViewModel product)
+        {
+            return View();
+        }
     }
 }
