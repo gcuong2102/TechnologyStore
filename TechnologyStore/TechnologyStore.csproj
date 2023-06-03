@@ -248,8 +248,11 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\Assets\css\chosen.css" />
     <Content Include="Areas\Admin\Assets\css\cs-skin-elastic.css" />
     <Content Include="Areas\Admin\Assets\css\custom.css" />
+    <Content Include="Areas\Admin\Assets\css\lib\chosen.jquery.min.js" />
+    <Content Include="Areas\Admin\Assets\css\lib\chosen.min.css" />
     <Content Include="Areas\Admin\Assets\css\lib\chosen\chosen-sprite%402x.png" />
     <Content Include="Areas\Admin\Assets\css\lib\chosen\chosen-sprite.png" />
     <Content Include="Areas\Admin\Assets\css\lib\chosen\chosen.css" />
@@ -261,6 +264,7 @@
     <Content Include="Areas\Admin\Assets\css\style.css" />
     <Content Include="Areas\Admin\Assets\fonts\icomoon\icomoon.svg" />
     <Content Include="Areas\Admin\Assets\fonts\icomoon\index.html" />
+    <Content Include="Areas\Admin\Assets\js\chosen.jquery.js" />
     <Content Include="Areas\Admin\Assets\js\custom.js" />
     <Content Include="Areas\Admin\Assets\js\dashboard.js" />
     <Content Include="Areas\Admin\Assets\js\init\chartjs-init.js" />
@@ -315,6 +319,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\chosen-sprite%402x.png" />
+    <Content Include="Images\chosen-sprite.png" />
     <Content Include="Images\image1.jpg" />
     <Content Include="Images\image2.jpg" />
     <Content Include="Images\image3.jpg" />

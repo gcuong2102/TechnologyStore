@@ -25,6 +25,10 @@ namespace TechnologyStore.Areas.Admin.Controllers
         [HttpGet]
         public ActionResult Create() 
         {
+            var listBrand = new DataAccess().GetListBrandForViewBag();
+            var listCategory = new DataAccess().GetListCategoriesForViewBag();
+            ViewBag.ListBrand = new SelectList(listBrand, "id", "name");
+            ViewBag.ListCategories = new SelectList(listCategory, "Id", "Name");
             return View();
         }
         [HttpPost]
